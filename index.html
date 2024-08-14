@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador/Decodificador Base64</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br"><img src="./assets/logoAlura.png" alt="logo da alura" class="logo"></a>
+    </header>
+    <main class="principal">
+        <section class="primeira_secao">
+            <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+            <br>
+            <h6><ion-icon name="alert"></ion-icon>Não utilize letras maísculas e acentos</h6>
+            <br>
+            <div class="buttons">
+                <button onclick="codificarTexto()">criptografar</button>
+                <button onclick="decodificarTexto()">descriptografar</button>
+            </div>
+        </section>
+        <aside class="output-container">
+            <div class="output-container-organizacao" id="resultado">
+                <div class="output-container-imagem">
+                    <img src="./assets/gato-com-oculos-lendo-livro-gato-lendo-um-livro.png" alt="gato procurando texto">
+                </div>
+                <br>
+                <div class="output-text">    
+                    <h2>texto não encontrado</h2>
+                    <p>Digite um texto para criptografar e descriptografar</p>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copiarTexto()">Copiar</button>
+        </aside>
+    </main>
+    <footer>
+        <p>Conecte-se comigo:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/luigi-cortez-leres-87648630b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a>
+            <a href="https://github.com/Luigi-Cortez" target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+:root{
+    --cor-primaria: #021526;
+    --cor-secundaria: #03346E;
+    --cor-ternaria: #6EACDA;
+    --cor-quaternaria: #E2E2B6;
+}
+
+*{
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+header {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 30px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100vh - 250px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: both;
+    box-shadow: 0 3px 3px 0 black;
+    border: 0 none;
+    border-radius: 15px;
+    outline: 0;
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px 0 black;
+    background-color: var(--cor-ternaria);
+}
+
+.output-container {
+    margin: 0;
+    width: 35%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    background-color: var(--cor-secundaria);
+}
+
+.output-container-imagem{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    margin: 0;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+.output-text {
+    word-wrap: break-word;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copy-button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background-color: var(--cor-quaternaria);
+}
+
+.social-links a {
+    flex-direction: row;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
